@@ -1,5 +1,7 @@
 # dsh-proxy
 
+**English** · [中文](./README.zh-CN.md)
+
 Password-protected **reverse proxy** (HTTP + WebSocket) in front of a
 [DSH](https://github.com/deepseek-ai/dsh) Web GUI.
 
@@ -128,3 +130,7 @@ Open an issue or PR — see the [GitHub repo](https://github.com/).
 ## License
 
 MIT
+
+---
+
+This work is conducted by [Aztech Labs](https://github.com/Aztech-Lab) with DeepSeek Harness (Deepseek-V4-Flash).
