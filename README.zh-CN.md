@@ -2,7 +2,7 @@
 
 [English](./README.md) · **中文**
 
-> **把你的 DeepSeek Harness（DSH）端口代理到 `http://<本机IP>:3301`，并额外施加安全协议，让你内网可以任何时候访问 DSH（包括手机）。**
+**把你的 DeepSeek Harness（DSH）端口代理到 `http://<本机IP>:3301`，并额外施加安全协议，让你内网可以任何时候访问 DSH（包括手机）。**
 
 在 [DSH](https://github.com/deepseek-ai/dsh) Web GUI 前面的**带密码反向代理**（HTTP + WebSocket）。
 
