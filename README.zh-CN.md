@@ -2,11 +2,17 @@
 
 [English](./README.md) · **中文**
 
+> **把你的 DeepSeek Harness（DSH）端口代理到 `http://<本机IP>:3301`，并额外施加安全协议，让你内网可以任何时候访问 DSH（包括手机）。**
+
 在 [DSH](https://github.com/deepseek-ai/dsh) Web GUI 前面的**带密码反向代理**（HTTP + WebSocket）。
 
 DSH 保持绑定在 `127.0.0.1`（仅回环，安全）。本代理绑定 `0.0.0.0`，让局域网内的手机能通过密码访问它。
 
 > **零依赖** —— 纯 Node 内置模块。跨平台（macOS / Linux / Windows × x86 / ARM）。
+
+## 给 agent 看（TL;DR）
+
+DSH 前面的带密码反向代理。DSH 保持回环；本代理绑定 `0.0.0.0:3301` 并转发 HTTP + WebSocket 给它。认证是签名 cookie（30 天会话）、可选 HTTPS、带速率限制。运行：`DSH_PROXY_PASS=<密码> node lib/cli.js`。macOS 停止：`launchctl bootout gui/$(id -u)/com.dsh.lan-proxy`。详见下文。
 
 ## 为什么
 

@@ -2,6 +2,10 @@
 
 **English** · [中文](./README.zh-CN.md)
 
+> **Proxies your DeepSeek Harness (DSH) port to `http://<this-machine-ip>:3301`
+> with added security, so you can access DSH from anywhere on the LAN —
+> including your phone.**
+
 Password-protected **reverse proxy** (HTTP + WebSocket) in front of a
 [DSH](https://github.com/deepseek-ai/dsh) Web GUI.
 
@@ -10,6 +14,14 @@ DSH stays bound to `127.0.0.1` (loopback only, safe). This proxy binds to
 
 > **Zero dependencies** — pure Node built-ins. Cross-platform (macOS / Linux /
 > Windows × x86 / ARM).
+
+## For agents (TL;DR)
+
+A password-protected reverse proxy in front of DSH. DSH stays loopback-only;
+this binds `0.0.0.0:3301` and forwards HTTP + WebSocket to it. Auth is a
+signed cookie (30-day session), optional HTTPS, rate-limited. To run:
+`DSH_PROXY_PASS=<pw> node lib/cli.js`. To stop on macOS:
+`launchctl bootout gui/$(id -u)/com.dsh.lan-proxy`. See below for details.
 
 ## Why
 
