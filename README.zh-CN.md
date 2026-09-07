@@ -111,10 +111,10 @@ launchctl list | grep dsh.lan-proxy
 
 开 issue 或 PR —— 见 [GitHub 仓库](https://github.com/)。
 
+## Acknowledgement
+
+本项目由 [Aztech Labs](https://github.com/Aztech-Lab) 使用 DeepSeek Harness（Deepseek-V4-Flash）完成。
+
 ## License
 
 MIT
-
----
-
-本项目由 [Aztech Labs](https://github.com/Aztech-Lab) 使用 DeepSeek Harness（Deepseek-V4-Flash）完成。
