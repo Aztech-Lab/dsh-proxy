@@ -1,0 +1,35 @@
+{
+  "name": "dsh-proxy",
+  "version": "0.1.0",
+  "description": "Password-protected reverse proxy (HTTP + WebSocket) in front of a DSH Web GUI — keeps DSH loopback-only while letting a phone on the LAN reach it. Cookie-session auth, optional HTTPS, rate limiting. Zero dependencies.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-proxy": "./lib/cli.js"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "proxy",
+    "reverse-proxy",
+    "lan",
+    "websocket",
+    "basic-auth",
+    "cookie"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
