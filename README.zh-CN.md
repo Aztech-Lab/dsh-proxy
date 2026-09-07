@@ -23,8 +23,6 @@ DSH 前面的带密码反向代理。DSH 保持回环；本代理绑定 `0.0.0.0
 - **零依赖** —— 纯 Node 内置模块。
 - **3301!**
   
-<img src="lib/3301.PNG" width="50%" alt="3301">
-
 ## 运行
 
 ```bash
@@ -117,6 +115,8 @@ launchctl list | grep dsh.lan-proxy
 ## 鸣谢
 
 本项目由 [Aztech Labs](https://github.com/Aztech-Lab) 使用 DeepSeek Harness（Deepseek-V4-Flash）完成。
+
+<img src="lib/3301.PNG" width="50%" alt="3301">
 
 ## 许可证
 
