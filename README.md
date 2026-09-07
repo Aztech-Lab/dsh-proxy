@@ -1,6 +1,11 @@
 # dsh-proxy
 ## Proxies your DeepSeek Harness (DSH) port to `http://<this-machine-ip>:3301` with added security, so you can access DSH from anywhere on the LAN — including your phone.
 
+> ⚠️ **DSH 1.1 only.** DeepSeek Harness **1.2** added a **local token verification**
+> that breaks this reverse-proxy approach (the proxy can no longer pass through
+> to the GUI). This project targets DSH **1.1**. If you're on 1.2+, a different
+> access method is required.
+
 **English** · [中文](./README.zh-CN.md)
 
 Password-protected **reverse proxy** (HTTP + WebSocket) in front of a

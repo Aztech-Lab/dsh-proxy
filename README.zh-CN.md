@@ -2,6 +2,8 @@
 
 ## 把你的 DeepSeek Harness（DSH）端口代理到 `http://<本机IP>:3301`，并额外施加安全协议，让你内网可以任何时候访问 DSH（包括手机）。
 
+> ⚠️ **仅适用于 DSH 1.1。** DeepSeek Harness **1.2** 加入了**本地 token 验证**，会破坏这种反向代理方式（代理无法再透传访问界面）。本项目面向 DSH **1.1**。若你用的是 1.2+，需要别的访问方式。
+
 [English](./README.md) · **中文**
 
 在 [DSH](https://github.com/deepseek-ai/dsh) Web GUI 前面的**带密码反向代理**（HTTP + WebSocket）。
