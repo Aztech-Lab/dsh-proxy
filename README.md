@@ -127,10 +127,10 @@ Contributions are welcome! Ideas that would help:
 
 Open an issue or PR — see the [GitHub repo](https://github.com/).
 
+## Acknowledgement
+
+This work is conducted by [Aztech Labs](https://github.com/Aztech-Lab) with DeepSeek Harness (Deepseek-V4-Flash).
+
 ## License
 
 MIT
-
----
-
-This work is conducted by [Aztech Labs](https://github.com/Aztech-Lab) with DeepSeek Harness (Deepseek-V4-Flash).
